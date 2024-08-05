@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Fronts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/c169b62544.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-white">
+    <!-- navbar section start  -->
+    <nav
+        class="navbar bg-base-100 shadow-lg flex justify-between items-start lg:items-center px-[10%] sticky top-0 z-50">
+        <img class="h-7 md:h-9 lg:h-10 flex-start" src="/assets/logo.png" alt="Logo">
+        <div id="menu" class="hidden flex flex-col lg:flex lg:flex-row lg:items-center lg:space-x-8 urbanist">
+            <a href="#" class="navLink">Home</a>
+            <a href="#" class="navLink">About</a>
+            <a href="#" class="navLink">Rooms</a>
+            <a href="#" class="navLink">Blog</a>
+            <a href="#" class="navLink">Page</a>
+        </div>
+        <button id="menu-btn"
+            class="lg:hidden px-4 py-2 text-sm border border-gray-300 bg-transparent hover:bg-gray-100 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block h-4 w-4 stroke-current">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <div id="menu" class="hidden flex flex-col lg:flex lg:flex-row lg:items-center lg:space-x-4 urbanist">
+            <button>Login/Signup</button>
+            <button class="bg-[#ceaf83] px-5 py-2 rounded-full text-white">Reservation</button>
+        </div>
+    </nav>
+    <!-- navbar section end  -->
+
+    <!-- Find the top Hotels nearby section start -->
+    <section class="grid grid-cols-12 gap-4 px-[11%] py-[2%] mt-5 relative mx-2 lg:mx-0">
+        <div class="order-last lg:order-first col-span-12 lg:col-span-7 flex flex-col justify-center mb-[100px]">
+            <h1 class="text-[60px] leading-[55px] fontPlayfair">Find the top <br> Hotels nearby</h1>
+            <p class="text-sm leading-[20px] font-light mt-[15px]">Looking for a comfortable and convenient place to
+                call home? Our
+                house rental
+                offers
+                spacious <br> living
+                areas, modern amenities, and a prime location. Featuring multiple bedrooms, updated <br> kitchens, and
+                cozy
+                living spaces, it's perfect for
+                families or professionals.</p>
+            <div class="mt-[25px] w-[80%] grid grid-cols-4 justify-items-start text-sm urbanist">
+                <button>Vila</button>
+                <button>Family</button>
+                <button>Hotel</button>
+                <button>Room</button>
+            </div>
+            <div class="mt-[25px] lg:w-[60%] h-9 flex justify-items-start urbanist relative">
+                <button class="bg-[#eee5d8] mr-4 px-4 py-0 rounded-full text-[12px] text-[#CEAF83]">Discover
+                    now</button>
+                <button class="flex items-center relative text-sm">
+                    <span class="flex items-center justify-center mr-2"><img class="h-9 w-9 rounded-full blur-[0.5px]"
+                            src="/assets//bodyImg1.jpeg" alt="">
+                        <i class="fa-solid fa-play absolute bg-transparent text-white"></i>
+                    </span>
+                    Watch our
+                    story</button>
+
+            </div>
+            <p class="mt-[25px] text-sm">Check Availability</p>
+        </div>
+
+        <div class="col-span-12 lg:col-span-5 relative pb-5">
+            <div class="px-8 py-5">
+                <img class="rounded-lg w-full h-auto" src="/assets/headerImg.png" alt="Home image">
+            </div>
+            <img class="absolute rounded-full top-1/2 right-0 transform -translate-y-1/2 h-20 w-20 border-[6px] border-white"
+                src="/assets/headerLogo.jpeg" alt="Home image">
+            <img class="absolute rounded-full top-0 left-0 h-20 w-20 border-[6px] border-white"
+                src="/assets/headerLogo2.jpeg" alt="Home image">
+        </div>
+
+        <div
+            class="absolute w-full lg:w-[60%] bottom-10 lg:bottom-[75px] left-0 lg:mx-[10%] urbanist rounded-full boxShadow text-[9px] lg:text-sm bg-white">
+            <div class="grid grid-cols-6 rounded-full boxShadow px-7 py-4">
+                <div class="grid grid-cols-1 rounded-full">
+                    <p>Check In</p>
+                    <p class="mt-1">Add dates</p>
+                </div>
+                <div class="grid grid-cols-1">
+                    <p>Check Out</p>
+                    <p>Add dates</p>
+                </div>
+                <div class="grid grid-cols-1">
+                    <p>Adults</p>
+                    <p>Add Adults</p>
+                </div>
+                <div class="grid grid-cols-1">
+                    <p>Children</p>
+                    <p>Add Children</p>
+                </div>
+                <div class="grid grid-cols-1">
+                    <p>Room’s</p>
+                    <p>Add Room’s</p>
+                </div>
+                <div class="grid grid-cols-1 rounded-full relative">
+                    <button
+                        class="w-[30px] lg:w-[45px] h-[30px] lg:h-[45px] bg-[#ceaf83] rounded-full absolute right-0"><i
+                            class="fa-solid fa-magnifying-glass bg-transparent text-white"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Find the top Hotels nearby section end -->
+
+    <section class="backgroundImg">
+        <div class="grid grid-cols-2 mx-[10%] pt-10">
+            <p class="text-[25px] fontPlayfair font-bold">Discover Homeya's Finest Properties For <br> Your Dream Home
+            </p>
+            <p class="text-[12px] pt-5">All three of Rooms Hotels locations are restorations that translate historic
+                locations into places of
+                contemporary
+                comfort. Industrial architecture, salvaged building materials and the unique approach</p>
+        </div>
+        <div class="grid grid-cols-12 gap-4 mt-10 mx-[10%]">
+            <img class="rounded-lg col-span-12 lg:col-span-7 w-full h-[350px] transition-transform duration-300 hover:transform hover:-translate-y-1"
+                src="/assets/bodyImg1.jpeg" alt="Home image">
+            <img class="rounded-lg col-span-12 lg:col-span-5 w-full h-[350px] transition-transform duration-300 hover:transform hover:-translate-y-1"
+                src="/assets/bodyImg2.jpeg" alt="Home image">
+            <img class="rounded-lg col-span-12 lg:col-span-4 h-[300px] w-full transition-transform duration-300 hover:transform hover:-translate-y-1"
+                src="/assets/bodyImg3.jpeg" alt="Home image">
+            <img class="rounded-lg col-span-12 lg:col-span-4 h-[300px] w-full transition-transform duration-300 hover:transform hover:-translate-y-1"
+                src="/assets/bodyImg4.jpeg" alt="Home image">
+            <img class="rounded-lg col-span-12 lg:col-span-4 h-[300px] w-full transition-transform duration-300 hover:transform hover:-translate-y-1"
+                src="/assets/bodyImg5.jpeg" alt="Home image">
+        </div>
+        <div class="flex items-center justify-center mt-7 pb-10">
+            <button class="bg-[#CEAF83] px-6 py-3 rounded-full text-[12px] text-white"><span class="mr-2">View
+                    All</span> <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Review section : -->
+    <section class="grid grid-cols-12">
+        <div
+            class="bg-[#1C1B1F] py-5 h-fit lg:h-[300px] col-span-12 lg:col-span-6 flex flex-col justify-center items-center">
+            <p class="text-[35px] fontPlayfair text-white font-bold">Rave Reviews from Our <br> Satisfied Guests</p>
+            <div class="flex w-full items-center px-[20%] pt-5">
+                <button class="h-8 w-8 bg-white rounded-full"><i class="fa-solid fa-arrow-left"></i></button>
+                <span class="w-2 h-2 ml-4 rounded-full bg-[#ceaf83]"></span>
+                <span class="w-2 h-2 mx-2 rounded-full bg-white"></span>
+                <span class="w-2 h-2 mr-4 rounded-full bg-white"></span>
+                <button class="h-8 w-8 bg-[#ceaf83] rounded-full"><i
+                        class="fa-solid fa-arrow-right text-white"></i></button>
+            </div>
+        </div>
+
+        <div class="bg-[#FFF9F6] h-fit lg:h-[300px] col-span-12 lg:col-span-6 flex justify-center">
+            <div class="grid grid-cols-12 gap-4 justify-center items-center px-5  py-7 lg:py-0">
+                <!-- card 1: -->
+                <div class="border-2 h-fit rounded-lg bg-white p-4 col-span-12 lg:col-span-6">
+                    <div class="flex">
+                        <img class="w-10 h-10 rounded-full" src="/assets/avatar.jpeg" alt="">
+                        <span class="ml-3 text-[12px] urbanist">
+                            <p>Arman</p>
+                            <p>Webflow Developer</p>
+                        </span>
+                    </div>
+                    <p class="text-[10px] urbanist mt-5 font-semibold">Amazing design, easy to customize and a design
+                        quality
+                        superlative
+                        account on
+                        its cloud platform
+                        for the optimized
+                        performance. And we didn't on our original designs.</p>
+                    <div class="flex mt-4">
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                    </div>
+                </div>
+
+                <!-- card 2: -->
+                <div class="border-2 h-fit rounded-lg bg-white p-4 col-span-12 lg:col-span-6">
+                    <div class="flex">
+                        <img class="w-10 h-10 rounded-full" src="/assets/avatar.jpeg" alt="">
+                        <span class="ml-3 text-[12px] urbanist">
+                            <p>Arman</p>
+                            <p>Webflow Developer</p>
+                        </span>
+                    </div>
+                    <p class="text-[10px] urbanist mt-5 font-semibold">Amazing design, easy to customize and a design
+                        quality
+                        superlative
+                        account on
+                        its cloud platform
+                        for the optimized
+                        performance. And we didn't on our original designs.</p>
+                    <div class="flex mt-4">
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                        <i class="fa-solid fa-star text-[#ffc119]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-row');
+            menu.classList.toggle('space-y-2');
+        });
+    </script>
+</body>
+
+</html>
